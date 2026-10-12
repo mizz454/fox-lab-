@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11121a">
+<title>FOX LAB — мир открытий</title>
+<style>
+:root{--bg:#11121a;--panel:#1b1d2a;--text:#f7f5ff;--muted:#b3b2c7;--orange:#ff9a70;--pink:#ff62a5;--line:#ffffff20}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#42244b 0,transparent 34%),radial-gradient(ellipse at 0% 45%,#1d3452 0,transparent 35%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1050px,92%);margin:auto}header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.logo{font-weight:900;letter-spacing:1.5px;display:flex;gap:10px;align-items:center}.mark{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--orange),var(--pink))}nav{display:flex;gap:20px;color:var(--muted);font-size:14px}nav a:hover{color:white}
+.hero{min-height:490px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:45px 0 65px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800;color:#ffb69b}h1{font-size:clamp(42px,6vw,74px);line-height:1;letter-spacing:-3px;margin:18px 0}h1 span{background:linear-gradient(90deg,#ffc08b,#ff62a5);color:transparent;background-clip:text}.lead{max-width:520px;color:var(--muted);line-height:1.8;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:14px;border:1px solid var(--line);font:inherit;font-weight:750;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-3px)}.primary{background:linear-gradient(120deg,#ffc08b,#ff62a5);color:#21151d;border:0}.secondary{background:#ffffff09}
+.art{position:relative;min-height:330px;display:grid;place-items:center}.orbit{position:absolute;width:min(310px,80vw);aspect-ratio:1;border:1px solid #ffffff30;border-radius:50%;animation:spin 22s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--orange);box-shadow:0 0 24px var(--orange);top:15%;left:10%}.orbit:after{background:var(--pink);box-shadow:0 0 24px var(--pink);top:auto;left:auto;right:2%;bottom:25%}.planet{width:190px;aspect-ratio:1;border-radius:40% 60% 56% 44%/44% 40% 60% 56%;background:linear-gradient(135deg,#ffc08b,#ff62a5 52%,#796bff);box-shadow:inset -20px -25px 45px #21172f88,0 0 80px #ff5f8c35;display:grid;place-items:center;font-size:70px;animation:morph 8s ease-in-out infinite}.float{position:absolute;padding:12px 14px;background:#202230e8;border:1px solid var(--line);border-radius:15px;font-size:13px}.f1{top:13%;right:0}.f2{bottom:12%;left:0}
+section{padding:45px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:23px}h2{font-size:clamp(27px,4vw,37px);margin:8px 0;letter-spacing:-1px}.head p{max-width:400px;color:var(--muted);line-height:1.7;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{padding:23px;border:1px solid var(--line);background:linear-gradient(145deg,#ffffff0d,#ffffff04);border-radius:22px;transition:.22s}.card:hover{transform:translateY(-5px);border-color:#ff9b8555}.ico{width:45px;height:45px;border-radius:14px;background:#ff8c7c20;display:grid;place-items:center;font-size:22px;margin-bottom:17px}.card h3{margin:0 0 10px;font-size:19px}.card p{margin:0;color:var(--muted);line-height:1.7;font-size:14px}.lab{margin:25px 0 65px;padding:28px;border-radius:24px;background:linear-gradient(120deg,#ff8d6c1c,#b76bff1c);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:22px}.lab p{color:var(--muted);line-height:1.6}#fact{font-weight:700;color:#ffc4ad;line-height:1.6;max-width:580px}footer{border-top:1px solid var(--line);padding:24px 0 32px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:12px}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes morph{0%,100%{border-radius:40% 60% 56% 44%/44% 40% 60% 56%;transform:rotate(-8deg)}50%{border-radius:58% 42% 38% 62%/55% 59% 41% 45%;transform:rotate(8deg) scale(1.04)}}
+@media(max-width:720px){nav{gap:11px;font-size:12px}.hero{grid-template-columns:1fr;padding-top:30px;gap:0}.art{min-height:285px}.planet{width:160px;font-size:58px}.orbit{width:255px}.cards{grid-template-columns:1fr}.head,.lab{align-items:flex-start;flex-direction:column}h1{letter-spacing:-2px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body><div class="wrap">
+<header><a class="logo" href="#top"><span class="mark">✦</span> FOX LAB</a><nav><a href="#about">О проекте</a><a href="#ideas">Идеи</a><a href="#lab">Факты</a></nav></header>
+<main id="top">
+<div class="hero"><div><div class="eyebrow">✦ пространство любопытства</div><h1>Мир ближе,<br>чем <span>кажется.</span></h1><p class="lead">Познавательная мини-вселенная о науке, технологиях и удивительных вещах вокруг нас. Исследуй, задавай вопросы и открывай новое.</p><div class="actions"><a class="btn primary" href="#ideas">Начать исследовать ↗</a><a class="btn secondary" href="#lab">Удиви меня</a></div></div>
+<div class="art" aria-label="Анимированная планета"><div class="orbit"></div><div class="planet">🦊</div><div class="float f1">✧ Любопытство — суперсила</div><div class="float f2">🌌 Узнавай каждый день</div></div></div>
+<section id="about"><div class="head"><div><div class="eyebrow">01 / о проекте</div><h2>Маленькие открытия</h2></div><p>Необязательно знать всё. Достаточно найти один интересный вопрос и начать искать ответ.</p></div><div class="cards">
+<article class="card"><div class="ico">🧠</div><h3>Узнавай</h3><p>Каждый новый вопрос — начало путешествия. Ищи ответы и связывай разные идеи.</p></article>
+<article class="card"><div class="ico">🪄</div><h3>Экспериментируй</h3><p>Пробуй новые подходы, собирай проекты и не бойся менять то, что не получилось.</p></article>
+<article class="card"><div class="ico">🌱</div><h3>Расти в своём темпе</h3><p>Даже небольшое действие сегодня может стать большим навыком завтра.</p></article></div></section>
+<section id="ideas"><div class="head"><div><div class="eyebrow">02 / направления</div><h2>Что исследуем?</h2></div><p>Выбери тему, которая зацепила, и начни с малого.</p></div><div class="cards">
+<article class="card"><div class="ico">🌌</div><h3>Космос</h3><p>Узнай, почему на Венере день длиннее года и как далеко от нас звёзды.</p></article>
+<article class="card"><div class="ico">💻</div><h3>Технологии</h3><p>Разберись, как работают сайты, искусственный интеллект и приложения.</p></article>
+<article class="card"><div class="ico">🌍</div><h3>Языки и мир</h3><p>Изучай новые слова, культуры и удивительные факты о нашей планете.</p></article></div></section>
+<section id="lab"><div class="lab"><div><div class="eyebrow">03 / мини-лаборатория</div><h2>Случайный факт</h2><p>Нажми кнопку и получи маленькую порцию любопытства.</p><div id="fact" aria-live="polite">Готова к открытию? ✨</div></div><button class="btn primary" id="factButton">Открыть факт ✦</button></div></section>
+</main><footer><span>© 2026 FOX LAB · Сделано с любопытством</span><a href="#top">Наверх ↑</a></footer>
+</div>
+<script>
+const facts=[
+"🐙 У осьминогов три сердца.",
+"☀️ Свет от Солнца достигает Земли примерно за 8 минут 20 секунд.",
+"🪐 На Венере день длиннее её года.",
+"🦈 Скелет акулы состоит в основном из хряща, а не из костей.",
+"🍌 Ботанически банан считается ягодой.",
+"🎋 Некоторые виды бамбука могут расти очень быстро — почти на метр за сутки при подходящих условиях.",
+"🌙 Луна постепенно удаляется от Земли примерно на 3,8 сантиметра в год."
+];
+let previous=-1;
+document.getElementById("factButton").addEventListener("click",()=>{
+ let n; do{n=Math.floor(Math.random()*facts.length)}while(n===previous);
+ previous=n;document.getElementById("fact").textContent=facts[n];
+});
+</script>
+</body></html>
